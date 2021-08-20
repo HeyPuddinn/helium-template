@@ -1,0 +1,275 @@
+@media screen and (max-width: 1025px){
+    html{
+        /* overflow-x:hidden; */
+    }
+    .slide{
+        height: 40%;
+        top: 25%;
+    }
+    .home-wrapper{
+        height: 320px;
+    }
+    .slider-show{
+        height: 0;
+    }
+    .nav-wrapper{
+        width: 1024px;
+        position: fixed;
+    }
+    .nav-collapse{
+        height: 80px;
+        width: 100%;
+    }
+    .nav-list{
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+    }
+    .nav-item{
+        display: block;
+        width: 3%;
+    }
+    .carousel-title{
+        font-size: 40px !important;
+    }
+    .carousel-btn{
+        margin: 2.7rem 0;
+    }
+    .carousel-btn a{
+        padding: 0.7rem 2rem;
+    }
+    .btn-sliders{
+        top: 96%;
+    }
+    .portfolio{
+        padding: 5rem 0;
+    }
+    .features{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .nav-wrapper{
+        width: 769px;
+        padding: 10px 3.5rem 0;
+    }
+    .showNav .nav-list{
+        display: block;
+        height: 305px;
+        visibility:visible;
+        transition: all 0.2s ease-in-out;
+    }
+    .nav-collapse{
+        display: block;
+        /* height: 305px;
+        width: 94%;
+        transform: translateX(3%); */
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    .nav-list{
+        display: block;
+        height:0%;
+        visibility: hidden;
+        background : #fff;
+        transition: all 0.1s ease-in-out;
+    }
+    .nav-item{
+        width: 100%;
+        height:11%;
+    }
+    .nav-link{
+        /* transition: all 0.1s ease-in-out; */
+        padding-left: 4rem;
+        height:100%;
+        color: #000;
+    }
+    .navbars{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbars-toggler{
+        display: block;
+    }
+    .home-wrapper{
+        height: 240px;
+    }
+    .carousel-title{
+        font-size: 30px !important;
+    }
+    .carousel-text{
+        font-size:14px !important;
+    }
+    .carousel-btn{
+        margin: 2rem 0;
+    }
+    .carousel-btn a{
+        padding: 0.3rem 1.3rem;
+    }
+    .about-container{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .about-item{
+        width: 44%;
+    }
+    .services-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .filter-item{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .features-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .ft-number .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .ft-nbItem{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .team,
+    .pricing,
+    .contact{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .team-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .pricing-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .ps-slide{
+        bottom: 18%;
+    }
+    .ps-content{
+        width: 80%;
+    }
+    .ps-text{
+        margin-left:0;
+        margin-right:0;
+    }
+    .contact-content{
+        grid-template-columns: repeat(2, 50% 50%);
+    }
+    .ct-input-header{
+        grid-template-columns: repeat(1, 100%);
+    }
+    .footer-list{
+        grid-template-columns: repeat(2,1fr)
+    }
+    .footer{
+        padding-bottom: 5rem;
+    }
+    .ft2-link a{
+        margin : 0;
+        padding: 0;
+    }
+    .ft2-item{
+        width: 50%;
+    }
+    .ft2-item:last-child{
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .home-wrapper{
+        height: 130px;
+    }
+    .carousel-btn{
+        margin: 0;
+    }
+    .nav-wrapper{
+        padding: 10px 15px 0;
+        max-width: 480px;
+    }
+    .nav-logo img{
+        width: 70px;
+    }
+    .navbars-toggler{
+        padding: 0.3rem 0.5rem;
+    }
+    .nav-link{
+        padding-left: 1rem;
+    }
+    .navbars-toggler{
+        position: absolute;
+        left: 75%;
+    }
+    .bar1,
+    .bar2,
+    .bar3{
+        width: 20px;
+        margin: 4px 0;
+    }
+    .carousel-title{
+        font-size: 15px !important;
+        margin: 0 0 10px 0 !important;
+    }
+    .carousel-text{
+        font-size: 10px !important;
+        margin:5px 0 !important;
+    }
+    .carousel-btn a{
+        font-size: 14px;
+    }
+    .carousel-btn{
+        margin-top: 12px !important;
+    }
+    .btn-sliders{
+        display: none;
+    }
+    .about-container{
+        display: block;
+    }
+    .about-item{
+        width: 100%;
+        margin: 0;
+    }
+    .ft-nbItem{
+        margin-bottom: 20px;
+    }
+    .team-list,
+    .pricing-list,
+    .ft-number .container,
+    .features-list,
+    .filter-item,
+    .services-list{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team,
+    .pricing{
+        padding:0;
+    }
+    .pricing-list{
+        margin-bottom: 2rem;
+    }
+    .ps-slide{
+        bottom: 20%;
+        right: 1.5rem;
+    }
+    .contact{
+        padding: 0;
+    }
+    .contact-content{
+        grid-template-columns: repeat(1, 100%);
+    }
+    .footer-list{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .ft2-list{
+        display: block;
+    }
+    .ft2-item{
+        width: 100%;
+    }
+    .ft2-list1{
+        justify-content:flex-end;
+    }
+}
