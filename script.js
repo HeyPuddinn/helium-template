@@ -249,31 +249,42 @@ btn.addEventListener('click', (e) =>{
 });
 
 function checkInputs() {
-  //get the values from the checkInputs
   const nameValue = ctName.value.trim();
   const mailValue = mail.value.trim();
   const subjectValue = subject.value.trim();
+  //get the values from the checkInputs
+  
+  nameInputs(nameValue);
+  mailInputs(mailValue);
+  subjectInputs(subjectValue);
+};
 
-  if(nameValue === ''){
+function nameInputs(nameInput){
+  if(nameInput === ''){
     setErrorFor(ctName, 'Please enter your name' );
   } else {
     setSuccessFor(ctName);
   }
+}
 
-  if(mailValue === ''){
+function mailInputs(mailInput){
+  const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(mailInput === ''){
     setErrorFor(mail, 'Please enter your mail' );
   } else {
-    setSuccessFor(mail);
-    
+    if(mail.value.match(mailFormat)){
+      setSuccessFor(mail);
+    }
   }
+}
 
-  if(subjectValue === ''){
+function subjectInputs(subjectInput){
+  if(subjectInput === ''){
     setErrorFor(subject, 'Please enter your subject' );
   } else {
     setSuccessFor(subject);
-    
   }
-};
+}
 
 function setErrorFor(input,message){
     const Contact1 = input.parentElement;
